@@ -3,7 +3,7 @@ import React from 'react';
 import { Meta, Story } from '@storybook/react';
 import { FiArrowRight } from 'react-icons/fi';
 import { css } from '@emotion/react';
-import StoryLayout from '@ComponentFarm/modules/story_layout/StoryLayout';
+import StoryLayout from "@cComponentFarm/modules/story_layout/StoryLayout";
 import { BtnDelete, Button, ButtonProps } from './Button';
 import { Export, Plus, Right } from '../icons';
 

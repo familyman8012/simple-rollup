@@ -17,7 +17,7 @@ export default {
       sourcemap: true
     }
   ],
-  external: ['react', 'react-dom'],
+  external: ['react', 'react-dom', '@emotion/react', '@emotion/styled'],
   plugins: [
     peerDepsExternal(),
     resolve(),
@@ -25,8 +25,9 @@ export default {
     typescript({
       tsconfig: './tsconfig.json',
       declaration: true,
-      declarationDir: 'dist/types',
-      exclude: ['**/*.stories.tsx', '**/*.test.tsx'] // stories와 test 파일 제외
+      declarationDir: 'dist',
+      exclude: ['**/*.stories.tsx', '**/*.test.tsx', 'node_modules/**'],
+      outDir: 'dist'
     })
   ]
 };
